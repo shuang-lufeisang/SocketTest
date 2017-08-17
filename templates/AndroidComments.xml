@@ -1,0 +1,20 @@
+<templateSet group="AndroidComments">
+  <template name="fixme" value="// FIXME: $date$ $todo$" description="adds // FIXME" toReformat="true" toShortenFQNames="true">
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="todo" expression="" defaultValue="&quot;fix me&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="refactorme" value="// REFACTORME: $date$ $todo$" description="adds // REFACTORME" toReformat="false" toShortenFQNames="true">
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="todo" expression="" defaultValue="&quot;refactor me&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
