@@ -10,11 +10,11 @@
       <option name="COMPLETION" value="true" />
     </context>
   </template>
-  <template name="refactorme" value="// REFACTORME: $date$ $todo$" description="adds // REFACTORME" toReformat="false" toShortenFQNames="true">
+  <template name="refactor" value="// REFACTOR: $date$ $todo$" description="adds // REFACTOR" toReformat="false" toShortenFQNames="true">
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
-    <variable name="todo" expression="" defaultValue="&quot;refactor me&quot;" alwaysStopAt="true" />
+    <variable name="todo" expression="" defaultValue="&quot;REFACTOR&quot;" alwaysStopAt="true" />
     <context>
-      <option name="OTHER" value="true" />
+      <option name="JAVA_CODE" value="true" />
     </context>
   </template>
 </templateSet>
